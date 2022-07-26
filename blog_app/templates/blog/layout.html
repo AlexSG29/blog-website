@@ -3,9 +3,12 @@
 <html lang="es">
   <head>
     <title>{% block title %}  {% endblock  %}</title>
-    <link href="{% static "scss/style.css" %}" rel="stylesheet">
+    <link href="{% static "css/style.css" %}" rel="stylesheet">
   </head>
   <body id= "body">
+    <div id = "header">
+      <p>Here goes the logo, search input, etc.</p>
+    </div>
     <div id= "content">
         {% block content %}  {% endblock  %}
     </div>
@@ -13,7 +16,5 @@
         <h2>My blog</h2>
         <p>This is my blog.</p>
     </div>
-
-
   </body>
 </html>
